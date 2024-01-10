@@ -1,0 +1,385 @@
+<!DOCTYPE html>    
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gatonden</title>
+    <meta name="description"
+        content="An Cafe filled with your favourite Anime Characters, come over and taste some Ichiraku ramen">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <style>
+        .slide-item {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            z-index: 2;
+        }
+
+        .active {
+            left: 0;
+            transition: all 0.3s ease-out;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="landing-slide carousel slide text-dark px-0 vw-100 vh-100">
+        <div id="overlay"></div>
+        <div class="logo">
+            <img src="resources/images/gatoden-logo.png">
+        </div>
+        <div class="slide-item d-flex flex-column justify-content-center align-items-center visually-hiddens">
+            <h1 class="">Discover dishes from Anime directly on your plate</h1>
+            <hr>
+            <button type="button" class="btn" href="#reservation">Reserve Now</button>
+        </div>
+        <div class="slide-item d-flex flex-column justify-content-center align-items-center visually-hiddens">
+            <h1 class="">They say you eat with your eyes first</h1>
+            <hr>
+            <button type="button" class="btn" href="#menu">Check out our menu</button>
+        </div>
+
+    </div>
+
+    <div class="sticky-nav sticky-nav">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#reservation">Reserve</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <div class="background_col">
+        <div class="container d-flex flex-column justify-content-center align-items-center w-100 h-100 pt-3" id="about">
+            <h1>About Us</h1>
+            <h3>Our Vision</h3>
+    
+            <div class="container d-flex flex-row justify-content-end align-items-center">
+                <div id="about_img" class="d-flex justify-content-center"><img src="resources/images/about_img.png"></div>
+                <div id="about_txt" class="d-flex flex-column justify-content-between">
+                    <p>Ever felt like slurping those iconic ramen from "Naruto"? How about those steaks from "One Piece?"
+                        Maybe you want to try all those delecious gourmet from "Food wars". From Studio Ghibli's iconic
+                        delicacies to various mouth watering 2-d delicacies, Gatonden serves you the best dishes from anime
+                        brought to life. </p>
+                    <p>Gatonden is the first anime themed food restaurant established in Bangalore. It exists for the sole
+                        reason of appeasing your appetite for those eye-catching, mouth-watering, iconic 2-D dishes brought
+                        to life. Situated at the heart of Bangalore, we became an instant hit with the locals and
+                        eventually, die hard anime fans from around the state and country started visiting us. </p>
+    
+                    <p>Today, Gatonden has taken a special place in all our customer's hearts and that drives our passion
+                        higher than ever to cook and serve you the best way possible!</p>
+    
+                    <p><b>So "Youkoso" to Gatonden, the authentic food palace.</b></p>
+                    <p><b>Minna! Itadakimas!</b></p>
+                </div>
+            </div>
+        </div>
+    
+        <div id="menu" class="d-flex flex-column justify-content-center align-items-center my-5">
+            <h1 class="mb-3">Menu</h1>
+            <h3 class="mb-3">Let's Dive Right In</h3>
+            <div id="menu_col" class="d-flex flex-row justify-content-center align-items-center">
+                <div class="menu_card d-flex flex-column align-items-center justify-content-center my-3 mx-2">
+                    <div style="background-color: #9CDDBB;" class="menu_item d-flex flex-row p-2 mb-2">
+                        <div>
+                            <img src="resources/images/card_img_1.png">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between align-items-left p-2">
+                            <div>
+                                Ramen Noodles with Soft Boiled Egg, Shrimp and Snow Peas
+                            </div>
+                            <div>
+                                ₹620
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #90CC69;" class="menu_item d-flex flex-row p-2 mb-2">
+                        <div>
+                            <img src="resources/images/card_img_2.png">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between align-items-left p-2">
+                            <div>
+                                Galette with Egg
+                            </div>
+                            <div>
+                                ₹250
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #F5917D;" class="menu_item d-flex flex-row p-2 mb-2">
+                        <div>
+                            <img src="resources/images/card_img_3.png">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between align-items-left p-2">
+                            <div>
+                                Sashimi Rice Bowl
+                            </div>
+                            <div>
+                                ₹410
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #C1CB85;" class="menu_item d-flex flex-row p-2 mb-2">
+                        <div>
+                            <img src="resources/images/card_img_4.png">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between align-items-left p-2">
+                            <div>
+                                Chicken Egg Tempura Don
+                            </div>
+                            <div>
+                                ₹400
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="menu_card d-flex flex-column align-items-center justify-content-center my-3 mx-2">
+                    <div style="background-color: #9CDDBB;" class="menu_item d-flex flex-row p-2 mb-2">
+                        <div>
+                            <img src="resources/images/card_img_1.png">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between align-items-left p-2">
+                            <div>
+                                Ramen Noodles with Soft Boiled Egg, Shrimp and Snow Peas
+                            </div>
+                            <div>
+                                ₹620
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #90CC69;" class="menu_item d-flex flex-row p-2 mb-2">
+                        <div>
+                            <img src="resources/images/card_img_2.png">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between align-items-left p-2">
+                            <div>
+                                Galette with Egg
+                            </div>
+                            <div>
+                                ₹250
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #F5917D;" class="menu_item d-flex flex-row p-2 mb-2">
+                        <div>
+                            <img src="resources/images/card_img_3.png">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between align-items-left p-2">
+                            <div>
+                                Sashimi Rice Bowl
+                            </div>
+                            <div>
+                                ₹410
+                            </div>
+                        </div>
+                    </div>
+                    <div style="background-color: #C1CB85;" class="menu_item d-flex flex-row p-2 mb-2">
+                        <div>
+                            <img src="resources/images/card_img_4.png">
+                        </div>
+                        <div class="d-flex flex-column justify-content-between align-items-left p-2">
+                            <div>
+                                Chicken Egg Tempura Don
+                            </div>
+                            <div>
+                                ₹400
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                
+    
+            </div>
+            <div id="reviews" class="d-flex flex-column align-items-center justify-content-center">
+                <h1 class="mt-5 mb-3">Reviews</h1>
+                <h3 class="my-3">See What Others Think About GATONDEN</h3>
+                <div id="review_card" class="d-flex flex-column justify-content-center align-items-center mt-5">
+                    <div class="testimonial">
+                        <div class="box-top d-flex justify-content-between">
+                            <div class="name-user">
+                                <strong>Anya Forger</strong>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comment mt-2">
+                            <p>With the theme songs playing and the interior design, the cafe really gave a great vibe for us to relax and have our food.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial mt-3">
+                        <div class="box-top d-flex justify-content-between">
+                            <div class="name-user">
+                                <strong>Lisa Lisa</strong>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comment mt-2">
+                            <p>I can't recall what the name of the dish I ate was, but it was a meat dish with served with rice and a fried egg. The meat was designed to have a bone poking out each side of the meat so you could use them as handles (as you often see in anime or video games).</p>
+                        </div>
+                    </div>
+                    <div class="testimonial mt-3">
+                        <div class="box-top d-flex justify-content-between">
+                            <div class="name-user">
+                                <strong>Natsu Dragneel</strong>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comment mt-2">
+                            <p>The ambience is nice, and the staff were friendly and helpful. We were pleasantly surprised as the food proved filling and tasty. Though the prices were a bit expensive, so be sure to prepare your wallet.</p>
+                        </div>
+                    </div>
+                    <div class="testimonial mt-3">
+                        <div class="box-top d-flex justify-content-between">
+                            <div class="name-user">
+                                <strong>Kurosaki Orihime</strong>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="comment mt-2">
+                            <p>I got a mulberry drink which was reasonably tasty and well themed also.The food quality was pretty nice but compared to a lot of other places, the quality was perhaps a tad lower due to the gimmicks of themeing their food. The café itself was pretty chill and not too busy, so I would recommend coming here if you want a bit of a quiet break.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="contact" class="h-100 w-100 pt-5 d-flex flex-column align-items-center justify-content-center">
+                    <h1>Contact Us</h1>
+                    <h3>We'll get back to you ASAP</h3>
+                    <form action="mail.php" method="post" class="w-50 m-auto">
+                        <div class="card rounded-0">
+                            <div class="card-body p-3">
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <input type="email" class="form-control" name="email" placeholder="abc@gmail.com" required>
+                                    </div>
+                                </div>
+    
+                                <div class="form-group">
+                                    <div class="input-group mb-2">
+                                        <textarea class="form-control" name="message" placeholder="Enter Message Here" required></textarea>
+                                    </div>
+                                </div>
+    
+                                <div class="text-center">
+                                    <input type="submit" value="Send" class="btn btn-info btn-block w-100 rounded-3 mt-2 py-2">
+                                </div>
+                            </div>
+    
+                        </div>
+                    </form>
+                    <footer class="bg-light text-center text-lg-start w-100 bg-black text-white">
+                        <div class="icon-row h-25 p-4 d-flex flex-row justify-content-evenly align-items-center">
+                          <div class="icon-col d-flex flex-column justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                              </svg>
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31109.39448740458!2d77.61161823955078!3d12.928642100000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae145e728f97d7%3A0x2d5675295591969b!2s3rd%20Block%2C%20Koramangala%201A%20Block%2C%20Koramangala%203%20Block%2C%20Koramangala%2C%20Bengaluru%2C%20Karnataka%20560034!5e0!3m2!1sen!2sin!4v1672331461022!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                          </div>
+                          <div class="icon-col d-flex flex-column justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                              </svg>
+                              <p><b>Contact</b><br>080 25534123</p>
+                          </div>
+                          <div class="icon-col d-flex flex-column justify-content-center align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                              </svg>
+                              <p><b>Email</b><br>soma@gatonden.com</p>
+                          </div>
+                          <div class="d-flex flex-column justify-content-center align-items-center">
+                            <p style="margin-bottom: 0;"><b>Follow Us On</b></p>
+                            <div class="d-flex flex-row">
+                                <svg id="facebook" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                  </svg>
+                                  <svg id="instagram" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                  </svg>
+                                  <svg id="twitter" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                  </svg>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                          © 2022 Copyright:
+                          <a class="text-white" href="#">Shogogeki No Soma</a>
+                        </div>
+
+                      </footer>
+                </div>
+            </div>
+    </div>
+
+
+        <script>
+
+            window.onload = function () {
+                var slides = document.getElementsByClassName('slide-item'),
+                    removeActive = function (slide) { slide.classList.remove('active') };
+                addActive = function (slide) { slide.classList.add('active') },
+
+                    addActive(slides[0]);
+
+                setInterval(function () {
+                    for (var i = 0; i < slides.length; i++) {
+                        if (i + 1 == slides.length) {
+                            addActive(slides[0]);
+                            slides[0].style.zIndex = 100;
+                            setTimeout(removeActive, 100, slides[i]);
+                            break;
+                        }
+                        if (slides[i].classList.contains('active')) {
+                            slides[i].removeAttribute('style');
+                            setTimeout(removeActive, 100, slides[i]);
+                            addActive(slides[i + 1]);
+                            break;
+                        }
+                    }
+                }, 4000);
+            }
+
+        </script>
+</body>
+
+</html>
